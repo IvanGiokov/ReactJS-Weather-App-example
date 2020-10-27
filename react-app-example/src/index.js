@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import WeatherLocationList from './weather-cards-list';
+import WeatherLocationList from './weather-location-list';
 import reportWebVitals from './reportWebVitals';
+import WeatherSection from './weather-section'
 
 ReactDOM.render(
   <React.StrictMode>
-    <WeatherLocationList />
+    <WeatherSection />
   </React.StrictMode>,
   document.getElementById('root')
 );

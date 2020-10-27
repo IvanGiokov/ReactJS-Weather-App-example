@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import WeatherLocationList from './weather-cards-list';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WeatherLocationList />
   </React.StrictMode>,
   document.getElementById('root')
 );

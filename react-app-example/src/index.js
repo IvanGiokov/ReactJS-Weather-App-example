@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import WeatherLocationList from './weather-location-list';
 import reportWebVitals from './reportWebVitals';
 import WeatherSection from './weather-section'
+import Header from './header';
+import Footer from './footer';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <WeatherSection />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

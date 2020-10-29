@@ -2,15 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import WeatherSection from './weather-section'
-import Header from './header';
-import Footer from './footer';
+import Navigation from './Navigation'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <WeatherSection />
-    <Footer />
+    <Navigation />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -61,14 +61,10 @@ class WeatherCard extends React.Component {
     fetch(endpoint)
       .then((response) => response.json())
       .then((data) => {
-        this.setState({
-          name: data.location.name,
-          country: data.location.country,
-          observationTime: data.current.observation_time,
-          temperature: data.current.temperature,
-          weatherIcon: data.current.weather_icons[0],
-          weatherDescription: data.current.weather_descriptions[0]
-        })
+        const newState = this.retriveRequiredInfo(data)
+        this.setState(
+          Object.assign(this.state, newState)
+        )
       });
     this.setState({
       refreshCounter: this.state.refreshCounter + 1

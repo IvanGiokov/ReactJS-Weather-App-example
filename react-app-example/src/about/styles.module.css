@@ -1,0 +1,10 @@
+.container {
+    background: rgb(230, 231, 226);
+    text-align: center;
+    min-height: 76vh;
+    justify-content: center;
+    font-size: calc(40px + 2vmin);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.603);
+    padding-top: 40px;
+}

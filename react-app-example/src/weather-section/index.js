@@ -30,7 +30,7 @@ class WeatherSection extends React.Component {
                     this.setState(
                         {data:[...this.state.data,json]})
                 })
-                .catch((myErr) => console.log(myErr))
+                .catch((err) => console.log(err))
         });
     }
 
